@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.june.app.repository.BoardMapper">
+
+  <cache />
+
+  <select id="getBoardList" resultType="Board">
+    SELECT
+		NTT_ID
+		,BBS_ID
+		,NTT_NO
+		,NTT_SJ
+		,NTT_CN
+		,NTT_LINK
+		,ANSWER_YN
+		,P_NTT_ID
+		,ANSWER_LC
+		,SORT_ORDR
+		,RDCNT
+		,USE_YN
+		,ATCH_FILE_ID
+		,REGI_DATE
+		,REGI_ID
+		,UPDT_DATE
+		,UPDT_ID
+		,LIKE_ID              
+    FROM BBS_NTT
+    
+  </select>
+
+
+</mapper>
